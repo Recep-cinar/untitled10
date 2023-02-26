@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="13.356" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="SmartBear login Feature" name="SmartBear Login Test Scenario" time="13.227">
+<system-out><![CDATA[
+Given : User Is Already On Login Page.......................................passed
+When :Title Of Page Is Web Orders Login.....................................passed
+Then User Enter Username And Password.......................................passed
+And :User Click On Login Button.............................................passed
+And :User On The Home Page..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
