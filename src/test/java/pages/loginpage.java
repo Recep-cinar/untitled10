@@ -23,6 +23,12 @@ public class loginpage {
     @FindBy(id = "ctl00_MainContent_login_button")
     private WebElement loginbutton;
 
+    @FindBy(xpath="//*[@id=\"ctl00_menu\"]/li[3]/a")
+    private WebElement order;
+
+    @FindBy(xpath = "//*[@id=\"ctl00_MainContent_fmwOrder_InsertButton\"]")
+    private WebElement process;
+
 
     public void SetUsername()throws InterruptedException{
         username.sendKeys("Tester");
@@ -36,6 +42,13 @@ public class loginpage {
 
     public void SetLoginButton()throws InterruptedException{
         loginbutton.click();
+    }
+
+    public void SetClickOrder()throws InterruptedException{
+        order.click();
+    }
+    public void SetComfrimOrder()throws InterruptedException{
+        process.click();
     }
 
 
