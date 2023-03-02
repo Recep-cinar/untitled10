@@ -4,6 +4,8 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.UsernameAndPassword;
@@ -18,11 +20,13 @@ import java.util.Map;
 
 public class LoginStepDefinition {
    public static WebDriver driver;
+    static Logger log=LogManager.getLogger(LoginStepDefinition.class);
+
 
     @Given("^: User Is Already On Login Page$")
     public void _user_is_already_on_login_page() throws Throwable {
-
         utils.CommonUtils.GetScreenshot(driver,"LoginPage");
+        log.info(driver.getTitle());
     }
     @When("^:Title Of Page Is Web Orders Login$")
     public void title_of_page_is_web_orders_login() throws Throwable {

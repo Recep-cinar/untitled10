@@ -10,15 +10,15 @@ import java.io.IOException;
 
 public class hooks extends utils.driverutils{
 
-    @Before("@SanityTest")
+    @Before("@SmokeTest")
     public void initialeTest() throws IOException{
         LoginStepDefinition.driver=initialseDriver(LoginStepDefinition.driver,"chrome");
         String url=utils.CommonUtils.GetUrl("src/test/resources/login.properties");
         LoginStepDefinition.driver.get(url);
     }
-    @After("@SanityTest")
+    @After("@SmokeTest")
     public void teardown() throws IOException, InterruptedException {
-        Thread.sleep(10000);
+        Thread.sleep(4000);
         LoginStepDefinition.driver.close();
     }
 }

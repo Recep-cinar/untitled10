@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="18.247" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="SmartBear login Feature" name="User Creating New Order" time="18.094">
+<testsuite name="Cucumber" time="11.468" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="SmartBear login Feature" name="SmartBear Login Test Scenario" time="11.31">
 <system-out><![CDATA[
-Given :User enter username As "tester" and password as "test"...............passed
-When :user on order page....................................................passed
-And :user enter product information.........................................passed
-And :User enter address information.........................................passed
-And :User enter payment information.........................................passed
-Then :order successful......................................................passed
+Given : User Is Already On Login Page.......................................passed
+When :Title Of Page Is Web Orders Login.....................................passed
+Then User Enter Username And Password.......................................passed
+And :User Click On Login Button.............................................passed
+And :User On The Home Page..................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
